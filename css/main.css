@@ -1,0 +1,44 @@
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  width: 72px;
+}
+
+.header-content {
+  margin-left: auto;
+  text-align: right;
+}
+
+/*
+ *
+ * Content
+ *
+ */
+
+#banner-img {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+#about {
+  padding: 2em;
+}
+
+.featured-title {
+  text-align: center;
+}
+
+.featured-image {
+  border: 1px black solid;
+}
+

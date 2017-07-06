@@ -1,23 +1,78 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+	<title>Zachary Oleitschuk Professional Portfolio Site</title>
 
-<div class="home">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/main.css" />
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body class="container">
+	<!--website header -->
+	<header class="page-header row">
+		<div class="col-md-12 header">
+			<img class="header-logo img-responsive" src="img/logo.svg" alt="Website logo">
+			<div class="header-content">
+				<h1>Zachary Oleitschuk</h1>
+				<h4>Full Stack Wizard-in-Training</h4>
+			</div>
+		</div>
+	</header>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+	<!-- website main content -->
+	<div class="row">
+		<div class="col-md-12">
+			<img id="banner-img" class="img-rounded img-responsive" src="img/banner.jpg" alt="Picture of the Calgary skyline.">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div id="about" class="jumbotron">
+				<p>Currently working out of Calgary, Alberta, Canada for Fresnel Software as a Junior Developer.</p>
+				<p>I am passionate about designing, building, and implementing products and frameworks that encourage and support the personal growth of individuals. I am particularly excited about the potential for machine learning and artificial intelligence to disrupt traditional views on employment and work.</p>
+				<p>My mission is to develop systems and leaders devoted to the viral self-actualization of humanity.</p>
+			</div>
+		</div>
+	</div>
+	<section class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<h2 class="col-md-12">Featured Works</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a href="https://github.com/zoleitschuk/NeuralRecruiter">
+							<img class="featured-image img-responsive" src="img/neural-recruiter.png" alt="Output results visualization for the neural recruiter application.">
+							<h3 class="featured-title">Neural Recruiter</h3>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a href="https://github.com/zoleitschuk/movie_website_project">
+							<img class="featured-image img-responsive" src="img/favorite-movies.png" alt="Screenshot of the favorite movies site.">
+							<h3 class="featured-title">Me Through Movies</h3>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<a href="https://github.com/zoleitschuk/portfolio_site">
+							<img class="featured-image img-responsive" src="img/portfolio-webpage.png" alt="Screenshot of the professional portfolio webpage.">
+							<h3 class="featured-title">Portfolio Webpage</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- TODO (Zach - future): add a footer to contain contact information and links to social media. -->
+</body>
+</html>
